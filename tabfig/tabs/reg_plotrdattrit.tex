@@ -1,0 +1,38 @@
+\begin{tabular}{llcccccc}
+\hline \hline
+ & & \multicolumn{3}{c}{Discontinuity sample, Dry season} & \multicolumn{3}{c}{Discontinuity sample, Rainy seasons} \\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+ & & Dep. var. mean & \multicolumn{2}{c}{SP CA Coef.} & Dep. var. mean & \multicolumn{2}{c}{SP CA Coef.} \\
+ & & (Dep. var. SD) & \multicolumn{2}{c}{(SE)} & (Dep. var. SD) & \multicolumn{2}{c}{(SE)} \\
+ & & \# of obs. & \multicolumn{2}{c}{[p-value]} & \# of obs. & \multicolumn{2}{c}{[p-value]} \\
+\cmidrule(lr){4-5}\cmidrule(lr){7-8}
+ & & (1) & (2) & (3) & (4) & (5) & (6) \\
+\hline
+\multicolumn{2}{l}{Dep. var. (SP)} & & & & & & \\
+\cmidrule(lr){1-2}
+ & Tracked & 0.033 & 0.022 & 0.037 & 0.048 & 0.020 & 0.037 \\
+ & & (0.178) & (0.014) & (0.019) & (0.215) & (0.016) & (0.023) \\
+ & & 2,793 & [0.109] & [0.056] & 4,655 & [0.217] & [0.102] \\[0.5em]
+ & Missing & 0.058 & 0.120 & 0.098 & 0.061 & 0.115 & 0.092 \\
+ & & (0.233) & (0.025) & (0.028) & (0.240) & (0.025) & (0.028) \\
+ & & 2,793 & [0.000] & [0.000] & 4,655 & [0.000] & [0.001] \\[0.5em]
+ & Reason data is missing & & & & & & \\
+\cmidrule(lr){2-2}
+ & \hspace{0.5em}HH attrition & 0.036 & 0.028 & 0.032 & 0.036 & 0.028 & 0.033 \\
+ & & (0.186) & (0.019) & (0.022) & (0.187) & (0.019) & (0.022) \\
+ & & 2,793 & [0.135] & [0.148] & 4,655 & [0.136] & [0.143] \\[0.5em]
+ & \hspace{0.5em}Rented out comm. farmer & 0.012 & 0.091 & 0.067 & 0.011 & 0.087 & 0.063 \\
+ & & (0.109) & (0.019) & (0.015) & (0.106) & (0.019) & (0.015) \\
+ & & 2,793 & [0.000] & [0.000] & 4,655 & [0.000] & [0.000] \\[0.5em]
+ & \hspace{0.5em}Transaction (not tracked) & 0.010 & 0.002 & -0.001 & 0.014 & 0.000 & -0.003 \\
+ & & (0.099) & (0.005) & (0.007) & (0.116) & (0.006) & (0.008) \\
+ & & 2,793 & [0.741] & [0.852] & 4,655 & [0.984] & [0.681] \\
+\hline
+\multicolumn{2}{l}{Controls} & & & & & & \\
+\cmidrule(lr){1-2}
+ & Site-by-season FE &  & X &  &  & X &  \\
+ & SP distance to boundary &  & X & X &  & X & X \\
+ & SP log GPS area &  & X & X &  & X & X \\
+ & Spatial FE &  &  & X &  &  & X \\
+\hline
+\end{tabular}
