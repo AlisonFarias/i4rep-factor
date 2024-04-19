@@ -1,0 +1,179 @@
+## rds/h.rds ##
+hhcode:                    identifier, household
+survey:                    identifier, survey round
+hhofffarm:                 number of household members who worked off farm
+houseexp:                  housing and furnishing expenditures, past year
+foodsecprc:                first principal component of log days in the past week of consumption of food item-by-category and an indicator for any consumption of food item-by-category
+andconsindex:              index constructed following Anderson (2008) using houseexp, assetallprc, and foodsecprc
+assetallprc:               first principal component of log number of assets-by-category owned and an indicator for positive number of assets-by-category owned
+minikittakeup:             indicator that household reported using a minikit
+
+
+## rds/prices.rds ##
+sitedist:                  identifier, district of irrigation site
+season:                    identifier, season
+crp_name:                  identifier, crop name
+n:                         number of observations
+p:                         median sale price
+hort:                      crop is horticulture
+staple:                    crop is staple
+banana:                    crop is banana
+
+
+## rds/hs.rds ##
+hhcode:                    identifier, household
+season:                    identifier, season
+fullfees:                  land taxes owed (gross subsidy), admin data
+subsfees:                  land taxes owed (net subsidy), admin data
+paidfees:                  land taxes paid, admin data
+
+
+## rds/hps.rds ##
+hhcode:                    identifier, household
+plot:                      identifier, plot
+season:                    identifier, season
+cultivated:                any cultivation
+irrigated:                 any irrigation
+daysirrigated:             number of days irrigation was used
+inputexpha:                non-labor input expenditures per hectare
+anyhort:                   any horticulture
+anybanana:                 any bananas
+maincrp:                   first crop cultivated
+crop2:                     second crop cultivated
+crop3:                     third crop cultivated
+yield:                     harvest quantities valued at market prices per hectare
+salesha:                   sales per hectare
+hhlabha:                   household labor use per hectare
+hiredlabha:                hired labor use per hectare
+hiredlabexpha:             hired labor expenditures per hectare
+timenotenoughwater:        any time without enough water (missing when household didn't irrigate)
+daysnotenoughwater:        days without enough water (missing when household didn't irrigate)
+salesshare:                salesha as a share of yield, upper winsorized to 1 and set to 0 when yield is 0
+maincrphort:               main crop is horticulture
+maincrpbanana:             main crop is bananas
+
+
+## rds/hpsc.rds ##
+hhcode:                    identifier, household
+plot:                      identifier, plot
+season:                    identifier, season
+crop:                      identifier, crop
+crp_name:                  crop name
+soldkg:                    sales (kilograms)
+soldrwf:                   sales (RwF)
+
+
+## rds/hbaseline.rds ##
+hhcode:                    identifier, household
+site:                      sample plot irrigation site (self reported)
+regminikit2:               indicator household was assigned to receive a minikit
+nminikitlottery:           number of lotteries for minikits household was entered into
+nsubsidylottery:           number of lotteries for land tax subsidies household was entered into
+nmembers:                  number of household members
+nadultmembers:             number of household members (age 15-64)
+hhhfem:                    household head is female
+hhhage:                    age of household head
+hhhprim:                   household head completed primary
+hhhjob:                    household head worked off farm
+nplots:                    number of plots managed by the household (rented in, owned and cultivated past year, and rented out)
+reglotteryff2:             household assigned 100% land tax subsidy
+reglotteryfn2:             household assigned 50% land tax subsidy
+reglotteryhn2:             household assigned 25% land tax subsidy
+reglotterynn2:             household assigned 0% land tax subsidy
+sampleplot:                plot identifier of sample plot
+casp_sp:                   command area indicator for sample plot
+carv_sp:                   distance to command area boundary for sample plot
+caspxcarv_sp:              distance to command area boundary times command area indicator for sample plot
+rdsampgeo_sp:              indicator sample plot is in discontinuity sample
+sitegeo_sp:                sample plot irrigation site (plot map)
+omsamp_sp:                 indicator sample plot is in O&M experimental sample
+wug_sp:                    water user group of sample plot (anonymized)
+zone_sp:                   zone of sample plot (anonymized)
+regmonitor_sp:             sample plot water user group O&M treatment assignment
+mksat_sp:                  sample plot water user group minikit saturation assignment
+lareasp_sp:                log area of sample plot
+areasp_sp:                 area of sample plot
+farmermonitor_sp:          indicator sample plot water user group assigned farmer monitor
+farmermonitornoreserve_sp: indicator sample plot water user group assigned farmer monitor (without restriction farmer monitor has a plot near top of water user group)
+farmermonitorreserve_sp:   indicator sample plot water user group assigned farmer monitor (with restriction farmer monitor has a plot near top of water user group)
+mksamp:                    indicator that household is in minikit experimental sample
+sbsamp:                    indicator that household is in land tax subsidy experimental sample
+
+
+## rds/areas.rds ##
+hhcode:                    identifier, household
+plot:                      identifier, plot
+areasp:                    area
+
+
+## rds/trackps.rds ##
+trackcode:                 identifier, tracking survey
+trackplot:                 tracking survey identifier, plot
+hhcode:                    identifier, managing household
+plot:                      identifier, plot
+
+for other variables, see descriptions in rds/hps.rds
+
+
+## rds/hpbaseline.rds ##
+hhcode:                    identifier, household
+plot:                      identifier, plot
+areasp:                    area
+casp:                      command area indicator
+carv:                      distance to command area boundary
+wug:                       water user group (anonymized)
+zone:                      zone (anonymized)
+regmonitor:                water user group O&M treatment assignment
+mksat:                     water user group minikit saturation assignment
+sitegeo:                   irrigation site (plot map)
+rentedout:                 plot rented out at baseline
+rentedin:                  plot rented in at baseline
+rentedoutto:               who plot was rented out to at baseline
+terraced:                  plot terraced at baseline
+ownedtime:                 time plot had been owned at baseline (if owned at baseline)
+filename:                  filename of plot map
+slope:                     plot grade
+elevation:                 elevation of plot
+owned5:                    plot owned at least 5 years at baseline (if owned at baseline)
+own:                       plot owned at baseline
+rentedoutfarmer:           plot rented out to another farmer at baseline
+rentedoutinvestor:         plot rented out to a commercial farmer at baseline
+site:                      sample plot irrigation site (self reported)
+sampleplot:                indicator, plot is sample plot
+lareasp:                   log area
+omsamp:                    indicator plot is in O&M experimental sample
+farmermonitornoreserve:    indicator plot water user group assigned farmer monitor (without restriction farmer monitor has a plot near top of water user group)
+farmermonitorreserve:      indicator plot water user group assigned farmer monitor (with restriction farmer monitor has a plot near top of water user group)
+farmermonitor:             indicator plot water user group assigned farmer monitor
+rdsampgeo:                 indicator plot is in discontinuity sample
+caspxcarv:                 distance to command area boundary times command area indicator
+
+
+## rds/nearwug.rds ##
+filename:                  identifier, filename of plot map
+nearwug:                   nearest water user group (anonymized)
+zone:                      nearest zone (anonymized)
+
+
+## rds/hpssamp.rds ##
+hhcode:                    identifier, household
+plot:                      identifier, plot
+season:                    identifier, season
+blown:                     plot owned at baseline
+rentedout:                 plot rented out
+rentedoutfarmer:           plot rented out to another farmer
+rentedoutinvestor:         plot rented out to a commercial farmer
+rentedin:                  plot rented in
+own:                       plot owned
+
+
+## rds/landsatdf.rds ##
+hhcode:                    identifier, household
+plot:                      identifier, plot
+n:                         identifier, satellite image (anonymized)
+t:                         identifier, date of image
+ndvi:                      ndvi
+
+
+## rds/distm.rds ##
+matrix, row and column identifiers are filenames of plot map, value in row i and column j is the distance of the centroid of plot j to the boundary of plot i, ranked within column j.

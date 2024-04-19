@@ -1,0 +1,27 @@
+\begin{tabular}{lccccccc}
+\hline \hline
+ & \multicolumn{7}{c}{LOP, Baseline, Dry season, Discontinuity sample} \\
+\cmidrule(lr){2-8}
+ & Culti- & Irri- & Horti- & Banana & HH & Input & Hired \\
+ & vated & gated & culture & & labor/ & exp./ha & labor \\
+ & & & & & ha & & exp./ha \\
+\cmidrule(lr){2-2}\cmidrule(lr){3-3}\cmidrule(lr){4-4}\cmidrule(lr){5-5}\cmidrule(lr){6-6}\cmidrule(lr){7-7}\cmidrule(lr){8-8}
+ & (1) & (2) & (3) & (4) & (5) & (6) & (7) \\
+\hline
+\multicolumn{4}{l}{RDD (Site-by-season FE, Specification \ref{eq:specLOPrdd})} & & & & \\
+\cmidrule(lr){1-4}
+SP CA & 0.025 & 0.020 & 0.016 & 0.027 & -12.5\hphantom{-} & 3.2 & -7.5\hphantom{-} \\
+ & (0.048) & (0.018) & (0.017) & (0.038) & (21.3) & (1.5) & (4.2) \\
+ & [0.606] & [0.263] & [0.341] & [0.469] & [0.556] & [0.040] & [0.079] \\
+\\[-0.5em]
+\multicolumn{4}{l}{SFE (Spatial FE, Specification \ref{eq:specLOPsfe})} & & & & \\
+\cmidrule(lr){1-4}
+SP CA & 0.012 & 0.003 & 0.013 & 0.043 & -41.7\hphantom{-} & -0.1\hphantom{-} & -11.9\hphantom{-} \\
+ & (0.058) & (0.019) & (0.016) & (0.045) & (29.2) & (1.3) & (5.8) \\
+ & [0.830] & [0.891] & [0.407] & [0.344] & [0.153] & [0.953] & [0.042] \\
+\hline
+\# of observations & 725 & 725 & 725 & 725 & 721 & 725 & 725 \\
+\# of clusters & 165 & 165 & 165 & 165 & 165 & 165 & 165 \\
+Control mean & 0.187 & 0.031 & 0.027 & 0.130 & 41.8 & 1.4 & 5.2 \\
+\hline
+\end{tabular}

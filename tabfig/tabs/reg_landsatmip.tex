@@ -1,0 +1,37 @@
+\begin{tabular}{lcccc}
+\hline \hline
+ & \multicolumn{4}{c}{LOP, Landsat, Discontinuity sample} \\
+\cmidrule(lr){2-5}
+ & \multicolumn{2}{c}{Year$\leq 2008$} & \multicolumn{2}{c}{Year$\geq 2015$} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+ & \multicolumn{4}{c}{100 * NDVI} \\
+\cmidrule(lr){2-5}
+ & (1) & (2) & (3) & (4) \\
+\hline
+SP CA & 0.204 &  & 0.354 &  \\
+ & (0.275) &  & (0.223) &  \\
+ & [0.459] &  & [0.114] &  \\
+Rainy seasons * SP CA &  & 0.296 &  & 0.486 \\
+ &  & (0.293) &  & (0.241) \\
+ &  & [0.314] &  & [0.046] \\
+Dry season * SP CA &  & -0.016\hphantom{-} &  & 0.162 \\
+ &  & (0.293) &  & (0.247) \\
+ &  & [0.957] &  & [0.512] \\
+Joint F-stat [p] & 0.6 & 1.2 & 2.5 & 2.4 \\
+ & [0.458] & [0.315] & [0.114] & [0.096] \\
+\hline
+Pre-construction (Year $\leq$2008) & X & X &  &  \\
+Post-construction (Year $\geq$2015) &  &  & X & X \\
+Site-by-image FE & X & X & X & X \\
+SP distance to boundary & X & X & X & X \\
+SP log GPS area & X & X & X & X \\
+LOP log GPS area & X & X & X & X \\
+LOP CA & X & X & X & X \\
+Dry season * SP distance to boundary &  & X &  & X \\
+Dry season * SP log GPS area &  & X &  & X \\
+Dry season * LOP log GPS area &  & X &  & X \\
+Dry season * LOP CA &  & X &  & X \\
+\# of observations & 44,635 & 44,635 & 23,828 & 23,828 \\
+\# of clusters & 282 & 282 & 165 & 165 \\
+\hline
+\end{tabular}
